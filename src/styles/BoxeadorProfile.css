@@ -1,0 +1,120 @@
+.pages { 
+    max-width: 1000px;
+    width: 80%;
+    margin: auto;
+    padding: 3rem 0;
+    /* background-color: var(--col-D); */
+}
+ 
+.BoxeadorProfile {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 1rem 2rem ;
+}
+
+.name {
+    grid-column: span 2 ;
+    
+}
+
+.name h1 {
+    font-size: 2.4rem; 
+    text-align: center;
+}
+
+.BoxeadorGene {
+    text-align: center;
+}
+
+.InfoRapi {
+    border-collapse: separate;
+    border-spacing: 10px 8px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.InfoRapi td {
+    border-radius: 12px;
+    
+}
+
+
+.tbody-v-b-e {
+    font-size: 36px;
+}
+
+.tbody-v-b-e td:first-child {
+    background-color: var(--col-V);
+}
+
+.tbody-v-b-e td:nth-child(2) {
+    background-color: var(--col-D);
+}
+
+.tbody-v-b-e td:nth-child(3) {
+    background-color: var(--col-E);
+}
+
+.tfoot-KOs td:first-child {
+    color: var(--col-V);
+}
+
+.tfoot-KOs td:nth-child(2) {
+    color: var(--col-D);
+}
+
+.tfoot-KOs td:nth-child(3) {
+    color: var(--col-E);
+}
+
+
+.Art img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+/* Info boxeador */
+
+.datoGenerales {
+    color: var(--TXT-PRN);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, auto ) ;
+    column-gap: 30px;
+    
+}
+
+.info h1 {
+    font-size: 50px;
+    margin: 28px 0;
+}
+
+.boder p{
+    border-bottom: 1px solid var(--TXT-PRN);
+    font-size: 18px;
+    padding: 12px 0;
+}
+
+.boder span {
+    text-wrap: balance;
+}
+
+@media(max-width:660px) {
+    .pages {
+        width: 90%;
+    }
+
+    .BoxeadorProfile {
+        grid-template-columns: 1fr;
+    }
+
+    .name {
+        grid-column: span 1 ;
+        
+    }
+
+    .Art img {
+        width: 80%;
+    }
+}
